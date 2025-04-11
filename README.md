@@ -9,12 +9,12 @@ Este proyecto implementa un **pipeline completo de machine learning automatizado
 ```
 .
 ├── code/
-│   ├── preprocess.py         # Preprocesamiento y balanceo con SMOTE
-│   ├── train.py              # Entrenamiento del modelo XGBoost
-│   ├── evaluate.py           # Evaluación de métricas, matriz de confusión y predicciones
-├── sagemaker_pipeline.py     # Definición del pipeline completo de SageMaker
-├── trabajo-final.ipynb       # Notebook de ejecución y análisis
-└── README.md                 # Este archivo
+│   ├── preprocess.py                  # Preprocesamiento y balanceo con SMOTE
+│   ├── train.py                       # Entrenamiento del modelo XGBoost
+│   ├── evaluate.py                    # Evaluación de métricas, matriz de confusión y predicciones
+├── sagemaker_pipeline.py              # Definición del pipeline completo de SageMaker
+├── mlops-online-shopping.ipynb        # Notebook de ejecución y análisis
+└── README.md                         
 ```
 
 ---
@@ -34,9 +34,6 @@ Este proyecto implementa un **pipeline completo de machine learning automatizado
    - Métricas: `accuracy`, `precision`, `recall`, `f1-score`
    - Matriz de confusión y archivo de predicciones
    - Resultados guardados en `/opt/ml/processing/evaluation`
-
-4. **Registro del modelo (`RegisterModel`)**
-   - Se registra solo si el modelo cumple con un `f1_score ≥ 0.85`
 
 ---
 
